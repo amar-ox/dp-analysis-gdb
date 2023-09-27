@@ -1,0 +1,208 @@
+= Cheatsheets
+
+[[AclRule]]
+== AclRule
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[action]]`@action`|`link:enums.html#AclActionEnum[AclActionEnum]`|-
+|[[dstIp]]`@dstIp`|`String`|-
+|[[dstPort]]`@dstPort`|`String`|-
+|[[priority]]`@priority`|`String`|-
+|[[protocol]]`@protocol`|`String`|-
+|[[ruleName]]`@ruleName`|`String`|-
+|[[srcIp]]`@srcIp`|`String`|-
+|[[srcPort]]`@srcPort`|`String`|-
+|[[tableName]]`@tableName`|`String`|-
+|===
+
+[[AclTable]]
+== AclTable
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[binding]]`@binding`|`String`|-
+|[[description]]`@description`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[stage]]`@stage`|`link:enums.html#AclStageEnum[AclStageEnum]`|-
+|[[type]]`@type`|`link:enums.html#AclTypeEnum[AclTypeEnum]`|-
+|===
+
+[[Arp]]
+== Arp
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[ipAddr]]`@ipAddr`|`String`|-
+|[[macAddr]]`@macAddr`|`String`|-
+|[[netInterface]]`@netInterface`|`String`|-
+|[[vlan]]`@vlan`|`String`|-
+|===
+
+[[Bgp]]
+== Bgp
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[bgpState]]`@bgpState`|`link:enums.html#BgpStateEnum[BgpStateEnum]`|-
+|[[holdTime]]`@holdTime`|`String`|-
+|[[keepAlive]]`@keepAlive`|`String`|-
+|[[localAddress]]`@localAddress`|`String`|-
+|[[localAs]]`@localAs`|`String`|-
+|[[localRouterId]]`@localRouterId`|`String`|-
+|[[neighborAddress]]`@neighborAddress`|`String`|-
+|[[remoteAs]]`@remoteAs`|`String`|-
+|[[remoteRouterId]]`@remoteRouterId`|`String`|-
+|===
+
+[[BgpFilter]]
+== BgpFilter
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[action]]`@action`|`link:enums.html#FilterActionEnum[FilterActionEnum]`|-
+|[[prefix]]`@prefix`|`String`|-
+|[[priority]]`@priority`|`Number (int)`|-
+|[[setCommunities]]`@setCommunities`|`String`|-
+|[[setLocalPref]]`@setLocalPref`|`String`|-
+|[[type]]`@type`|`link:enums.html#FilterTypeEnum[FilterTypeEnum]`|-
+|===
+
+[[CreationReport]]
+== CreationReport
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[configProcessor]]`@configProcessor`|`Array of String`|-
+|[[graphCreator]]`@graphCreator`|`Array of String`|-
+|[[queriesGenerator]]`@queriesGenerator`|`Array of String`|-
+|[[timestamp]]`@timestamp`|`String`|-
+|===
+
+[[DeviceState]]
+== DeviceState
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[aclRule]]`@aclRule`|`Array of link:dataobjects.html#AclRule[AclRule]`|-
+|[[aclTable]]`@aclTable`|`Array of link:dataobjects.html#AclTable[AclTable]`|-
+|[[arp]]`@arp`|`Array of link:dataobjects.html#Arp[Arp]`|-
+|[[bgp]]`@bgp`|`Array of link:dataobjects.html#Bgp[Bgp]`|-
+|[[bgpFilter]]`@bgpFilter`|`Array of link:dataobjects.html#BgpFilter[BgpFilter]`|-
+|[[ipRoute]]`@ipRoute`|`Array of link:dataobjects.html#IpRoute[IpRoute]`|-
+|[[lldp]]`@lldp`|`Array of link:dataobjects.html#Lldp[Lldp]`|-
+|[[metadata]]`@metadata`|`link:dataobjects.html#Metadata[Metadata]`|-
+|[[netInterface]]`@netInterface`|`Array of link:dataobjects.html#Interface[Interface]`|-
+|[[vlan]]`@vlan`|`Array of link:dataobjects.html#Vlan[Vlan]`|-
+|===
+
+[[Interface]]
+== Interface
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[adminStatus]]`@adminStatus`|`link:enums.html#InterfaceStatusEnum[InterfaceStatusEnum]`|-
+|[[index]]`@index`|`String`|-
+|[[ipAddr]]`@ipAddr`|`String`|-
+|[[macAddr]]`@macAddr`|`String`|-
+|[[mtu]]`@mtu`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[operStatus]]`@operStatus`|`link:enums.html#InterfaceStatusEnum[InterfaceStatusEnum]`|-
+|[[speed]]`@speed`|`String`|-
+|[[type]]`@type`|`link:enums.html#InterfaceTypeEnum[InterfaceTypeEnum]`|-
+|===
+
+[[IpRoute]]
+== IpRoute
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[netInterface]]`@netInterface`|`String`|-
+|[[to]]`@to`|`String`|-
+|[[type]]`@type`|`String`|-
+|[[via]]`@via`|`String`|-
+|===
+
+[[Lldp]]
+== Lldp
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[localPort]]`@localPort`|`String`|-
+|[[remoteDevice]]`@remoteDevice`|`String`|-
+|[[remotePort]]`@remotePort`|`String`|-
+|===
+
+[[Metadata]]
+== Metadata
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[bgpAsn]]`@bgpAsn`|`String`|-
+|[[bgpStatus]]`@bgpStatus`|`link:enums.html#BgpStatusEnum[BgpStatusEnum]`|-
+|[[hostname]]`@hostname`|`String`|-
+|[[hwsku]]`@hwsku`|`String`|-
+|[[mac]]`@mac`|`String`|-
+|[[platform]]`@platform`|`String`|-
+|[[type]]`@type`|`link:enums.html#HostTypeEnum[HostTypeEnum]`|-
+|===
+
+[[NetworkState]]
+== NetworkState
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[configs]]`@configs`|`link:dataobjects.html#DeviceState[DeviceState]`|-
+|[[id]]`@id`|`Number (int)`|-
+|===
+
+[[Vlan]]
+== Vlan
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[member]]`@member`|`String`|-
+|[[mode]]`@mode`|`link:enums.html#VlanModeEnum[VlanModeEnum]`|-
+|[[name]]`@name`|`String`|-
+|[[vid]]`@vid`|`String`|-
+|===
+

@@ -1,0 +1,8 @@
+{
+  "api.name": "dpanalyser",
+  "dpanalyser.http.address": "dpanalyser",
+  "dpanalyser.http.port": 7070,
+  "url": "bolt://neo4j:7687",
+  "user": "neo4j",
+  "password": "12345"
+}
