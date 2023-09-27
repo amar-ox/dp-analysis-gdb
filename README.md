@@ -15,7 +15,7 @@ The following instructions have been tested on Ubuntu (16.04, 18.04, 20.04) and 
 Open a terminal and issue the following commands:
 
 ```bash
-git clone https://github.com/amar-ox/smart-network-repository.git
+git clone https://github.com/amar-ox/dp-analysis-gdb.git
 cd smart-network-repository/docker
 chmod +x build.sh run.sh
 ./build.sh
@@ -42,7 +42,7 @@ CALL apoc.meta.graph()
 
 Examples are available in the `examples/` folder. 
 
-First generate the forwarding model either using ![Java plugin](examples/reachability-java.md) or ![Cypher procedure](examples/reachability-cypher.md)
+First generate the forwarding model either using [Java plugin](examples/reachability-java.md) or [Cypher procedure](examples/reachability-cypher.md)
 
 ## Contribute
 
