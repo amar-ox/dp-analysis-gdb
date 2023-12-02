@@ -17,7 +17,6 @@ CALL apoc.create.vRelationship(r,'LINK',{},rr) YIELD rel
 RETURN r, rel, rr;
 ```
 
-
 ## 3. Show reachability trees
 ```bash
 MATCH (s:State)<-[:ORIG_STATE]-()
