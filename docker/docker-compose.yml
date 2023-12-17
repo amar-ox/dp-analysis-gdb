@@ -9,8 +9,8 @@ services:
       - "7687:7687"
     volumes:
       - "./neo4j-net.jar:/plugins/neo4j-net.jar"
-      - "/neo4j/data:/data"
-      - "/neo4j/import:/var/lib/neo4j/import"
+      - "/tmp/neo4j/data:/data"
+      - "/tmp/neo4j/import:/var/lib/neo4j/import"
     environment:
       - NEO4J_AUTH=neo4j/12345
       - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
